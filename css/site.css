@@ -39,13 +39,24 @@ h1 {
   text-transform: uppercase;
 }
 
-.caption {
-  text-transform: uppercase;
+a {
   text-decoration: none;
-  text-align: center;
 }
 
-p::first-letter { 
+figcaption {
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  color: #B6B6B6;
+
+}
+
+p::first-letter {
   font-size: 180%;
 }
 
