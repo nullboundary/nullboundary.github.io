@@ -54,9 +54,9 @@ figcaption {
 
 }
 
-p::first-letter {
+/*p::first-letter {
   font-size: 180%;
-}
+}*/
 
 .page-footer {
   text-transform: uppercase;
