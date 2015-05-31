@@ -51,7 +51,7 @@ figcaption {
   text-align: center;
   letter-spacing: 10px;
   /*background-color: #121212;*/
-  
+
   color: #8D8D8D;
   font-size: 0.5rem;
   margin-top: 3em;
@@ -87,12 +87,12 @@ figcaption {
   margin-left: 35px;
   text-decoration: none;
   /*color: #222;*/
-  
+
   color: #B6B6B6;
 }
 .pure-img {
   /*max-width: 90%;*/
-  
+
   margin: 10px auto 10px auto;
   /*border-radius: 2px;*/
 }
@@ -107,6 +107,9 @@ figcaption {
   font-size: 2.4em;
   margin: 0 0;
 }
+.video {
+  margin: 10px auto 10px auto;
+  max-width: 350px;
 }
 /* Larger than mobile */
 
