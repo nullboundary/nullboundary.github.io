@@ -147,4 +147,7 @@ figcaption {
   .container {
     max-width: 1200px
   }
+  .video {
+    margin-left: 1.5em;
+  }
 }
