@@ -42,16 +42,10 @@ figcaption {
   font-size: 0.8em;
   color: #B6B6B6;
 }
-/*p::first-letter {
-  font-size: 180%;
-}*/
-
 .page-footer {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 10px;
-  /*background-color: #121212;*/
-
   color: #8D8D8D;
   font-size: 0.5rem;
   margin-top: 3em;
@@ -79,16 +73,23 @@ figcaption {
   margin-bottom: 0;
 }
 .navbar-link {
+  padding: .5em 1em;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
   text-transform: uppercase;
   font-size: 0.6em;
   font-weight: 600;
   letter-spacing: .2rem;
   margin-right: 35px;
   margin-left: 35px;
-  text-decoration: none;
-  /*color: #222;*/
-
   color: #B6B6B6;
+}
+.navbar-link:hover{
+  color: #B6B6B6;
+}
+.bio-img {
+  max-width: 100%;
 }
 .pure-img {
   /*max-width: 90%;*/
@@ -96,7 +97,7 @@ figcaption {
   margin: 10px auto 10px auto;
   /*border-radius: 2px;*/
 }
-.pure-img::hover {
+.pure-img:hover {
   opacity: 0.9;
 }
 .container {
