@@ -73,7 +73,7 @@ figcaption {
   margin-bottom: 0;
 }
 .navbar-link {
-  padding: .5em 1em;
+  padding: .5em .5em;
   display: inline-block;
   text-decoration: none;
   white-space: nowrap;
