@@ -15,10 +15,14 @@ window.addEventListener('resize', function(event){
 });
 
 function setVideoHeight(){
-  var tempwidth=document.querySelector(".video").getBoundingClientRect().width;
-  //set video element height to match width
-  var tempheight=tempwidth;
-  document.querySelector(".video").height = tempheight;
+  var videoElm = document.querySelector(".video");
+  if (videoElm !== null){
+    var tempwidth = videoElm.getBoundingClientRect().width;
+    //set video element height to match width
+    var tempheight=tempwidth;
+    document.querySelector(".video").height = tempheight;
+  }
+
 }
 
 })(this, this.document);
