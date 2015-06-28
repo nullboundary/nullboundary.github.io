@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Random Room</title>
+  <meta name="description" content="The portfolio of Noah Shibley">
+  <meta name="author" content="Noah Shibley">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/pure/0.6.0/pure-min.css">
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <style>
+    #object1 {
+      position: absolute;
+      top: 80px;
+      left: 100px;
+      z-index: 3
+    }
+
+    #object2 {
+      position: absolute;
+      top: 80px;
+      left: 100px;
+      z-index: 2
+    }
+
+    #object3 {
+      position: absolute;
+      top: 80px;
+      left: 100px;
+      z-index: 1
+    }
+
+    #object4 {
+      position: absolute;
+      top: 355px;
+      left: 200px;
+      z-index: 5
+    }
+
+    #object5 {
+      position: absolute;
+      top: 300px;
+      left: 330px;
+      z-index: 5
+    }
+
+    #object6 {
+      position: absolute;
+      top: 408px;
+      left: 250px;
+      z-index: 4
+    }
+
+    #object7 {
+      position: absolute;
+      top: 284px;
+      left: 219px;
+      z-index: 6
+    }
+
+    #object8 {
+      position: absolute;
+      top: 200px;
+      left: 300px;
+      z-index: 4
+    }
+
+    #object9 {
+      position: absolute;
+      top: 160px;
+      left: 317px;
+      z-index: 6
+    }
+
+    #object10 {
+      position: absolute;
+      top: 200px;
+      left: 110px;
+      z-index: 5
+    }
+    #wrapper {
+      position: relative;
+      width: 700px ;
+      margin-left: auto ;
+      margin-right: auto ;
+    }
+  </style>
+</head>
+
+<body onload="start()">
+  <!-- Title & Nav bar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <h1 class="title">Social Hardware</h1>
+  <h6 class="title">The Portfolio of Noah Shibley</h6>
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <a class="navbar-link" href="/">Projects</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="/bio.html">Bio</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Text and thumbnails
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h6 class="project-title">Random Room 2002</h6>
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <p>Random Room is a web experience project which is currently running below. This whimsical project is about generating random permutations of a space, chaos and its effects on our experience.</p>
+      </div>
+    </div>
+    <div id="wrapper">
+
+      <div id="object2">
+        <img src="images/ceiling2.png"> </div>
+      <div id="object1">
+        <img src="images/walls3.png"> </div>
+      <div id="object3">
+        <img src="images/floor0.png"> </div>
+      <div id="object4">
+        <img src="images/endtable1.png"> </div>
+      <div id="object5">
+        <img src="images/couch0.png"> </div>
+      <div id="object6">
+        <img src="images/rug0.png"> </div>
+      <div id="object7">
+        <img src="images/ontable0.png"> </div>
+      <div id="object8">
+        <img src="images/backpic0.png"> </div>
+      <div id="object9">
+        <img src="images/lamp0.png"> </div>
+      <div id="object10">
+        <img src="images/sidepic0.png">
+      </div>
+
+    </div>
+  </div>
+  <footer class="page-footer">
+    Copyright © 2015, Noah Shibley. All rights reserved.
+  </footer>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/js/site.js"></script>
+  <script>
+    function Randomstuff(n) { // this function gets random numbers
+    	r = Math.random();
+    	r2 = r * n;
+    	r3 = Math.floor(r2);
+    	return (r3)
+    }
+
+    function backpicchange() {
+    	var backpic;
+    	backpic = Randomstuff(7);
+    	document.images[7].src = "images/backpic" + backpic + ".png";
+    }
+
+    function ontablechange() {
+    	var ontable;
+    	ontable = Randomstuff(3);
+    	document.images[6].src = "images/ontable" + ontable + ".png";
+    }
+
+    function rugchange() {
+    	var rug;
+    	rug = Randomstuff(4);
+    	document.images[5].src = "images/rug" + rug + ".png";
+    }
+
+    function couchchange() {
+    	var couch;
+    	couch = Randomstuff(3);
+    	document.images[4].src = "images/couch" + couch + ".png";
+    }
+
+    function endtablechange() {
+    	var endtable;
+    	endtable = Randomstuff(4);
+    	document.images[3].src = "images/endtable" + endtable + ".png";
+    }
+
+    function floorchange() {
+    	var floor;
+    	floor = Randomstuff(5);
+    	document.images[2].src = "images/floor" + floor + ".png";
+    }
+
+    function wallschange() {
+    	var walls;
+    	walls = Randomstuff(7);
+    	document.images[1].src = "images/walls" + walls + ".png";
+    }
+
+    function ceilingchange() {
+    	var ceiling;
+    	ceiling = Randomstuff(6);
+    	document.images[0].src = "images/ceiling" + ceiling + ".png";
+    }
+
+    function lampchange() {
+    	var lamp;
+    	lamp = Randomstuff(4);
+    	document.images[8].src = "images/lamp" + lamp + ".png";
+    }
+
+    function sidepicchange() {
+    	sidepic = Randomstuff(3);
+    	document.images[9].src = "images/sidepic" + sidepic + ".png";
+    }
+
+    function start() {
+    	setInterval("imagechange()", 5000);
+    	setInterval("ceilingchange()", 5500);
+    	setInterval("wallschange()", 6000);
+    	setInterval("floorchange()", 6500);
+    	setInterval("endtablechange()", 7000);
+    	setInterval("couchchange()", 7500);
+    	setInterval("rugchange()", 8000);
+    	setInterval("ontablechange()", 8500);
+    	setInterval("backpicchange()", 9000);
+    	setInterval("lampchange()", 9500);
+    	setInterval("sidepicchange()", 7234);
+    }
+  </script>
+
+</body>
+
+</html>
