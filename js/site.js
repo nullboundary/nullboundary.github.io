@@ -27,7 +27,7 @@ function setVideoHeight(){
       var tempheight=tempwidth;
       videoElmList[i].height = tempheight;
     }
-  });
+  }
 
 }
 
