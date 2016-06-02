@@ -15,13 +15,19 @@ window.addEventListener('resize', function(event){
 });
 
 function setVideoHeight(){
-  var videoElm = document.querySelector(".video");
-  if (videoElm !== null){
-    var tempwidth = videoElm.getBoundingClientRect().width;
-    //set video element height to match width
-    var tempheight=tempwidth;
-    document.querySelector(".video").height = tempheight;
-  }
+
+  //adjust size for ALL the videos on the page
+  var videoElmList = document.querySelectorAll(".video");
+
+  var lengthList = videoElmList.length;
+  for (var i = 0; i < lengthList; ++i) {
+    if (videoElmList[i] !== null){
+      var tempwidth = videoElmList[i].getBoundingClientRect().width;
+      //set video element height to match width
+      var tempheight=tempwidth;
+      videoElmList[i].height = tempheight;
+    }
+  });
 
 }
 
